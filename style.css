@@ -1,0 +1,373 @@
+html, body {
+	overflow-x: hidden;
+}
+body{
+	display: flex;
+	margin-top: 0;
+	margin-left: 0;
+	justify-content: center;
+	width: 100%;
+}
+.container{
+	margin: auto;
+	width: 100%;	
+	height: auto;
+	background-color: rgb(34, 34, 34);
+	font-family: "Inter";
+}
+.header{
+	background-color: rgb(255, 238, 3);
+	color:rgb(119, 38, 0);
+	width: 98%;
+	margin-left: 0;
+	margin-top:0;
+	z-index: 1;
+	transition: top 0.3s;
+	padding: 1%;
+	display: flex;
+	position: fixed;
+  left: 0;
+  top: 0;
+}
+#hederItem{
+	display: flex;
+	width: 50%;
+	font-weight: bolder;
+	font-size: 30px;
+}
+#hederItemOn{
+	width: 50%;
+	font-weight: bolder;
+	font-size: 30px;
+	display: none;
+}
+#hederItemOff{
+	display: flex;
+	cursor: pointer;
+	align-items: center;
+}
+.menuItem{
+	display: flex;
+	border-radius: 40px;
+	width: 4%;
+	height: 9%;
+	background-color: rgb(119, 38, 0);
+	position: relative;
+}
+.menuItem::after,.menuItem::before{
+	content: "";
+	border-radius: 40px;	
+	background-color: rgb(119, 38, 0);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+.menuItem::after{
+	top: 8px;
+}
+.menuItem::before{
+	top: -8px;
+}
+.right{
+	width: 50%;
+	display: flex;
+	justify-content: end;
+}
+#link,#linkX{
+	margin: 0 30px;
+	cursor: pointer;
+	text-decoration: none;
+	color:rgb(119, 38, 0);
+}
+#linkName{
+	width: 100%;
+	cursor: pointer;
+}
+.home{
+	margin: auto;	
+	padding: 20% 0;
+}
+.homeContent{
+	color:rgb(255, 238, 3);
+	display: flex;
+	margin: auto;
+	width: 60%;
+}
+.homeContenPart{
+	justify-content: center;
+}
+.title{
+	font-size: 55px;
+}
+.text{
+	font-size: 30px;
+}
+.projectText{
+	font-size: 25px;
+}
+.homeTitle{
+	color:rgb(36, 209, 195);
+	font-weight: bolder;
+	margin: 0 auto;
+}
+.homeText{
+	width: 90%;
+	margin: 2% 0;
+}
+.homeImg{
+	justify-content: start;
+	width: 100%;
+	height: auto;
+}
+.stacks{
+	color:rgb(255, 238, 3);
+	margin: 4% auto;
+	display: flex;
+	align-items: center;
+	font-weight: bolder;
+	width: 60%;
+}
+.line{
+	margin: 0 3%;
+	width: 1px;
+	height: 5%;
+	background-color: rgb(255, 238, 3);
+}
+.stack{
+	width: 5%;
+	margin: 0 3%;
+}
+.about {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 70%;
+	margin: auto;
+	padding-bottom: 20%;
+}
+.aboutContent {
+	background-color: rgb(255, 238, 3);
+	background-size: 1000px;
+	display: flex;
+	width: 100%	;
+	height: auto;
+	color: rgb(41, 41, 41);
+	padding: 2%;
+	font-family: "Inter", 'Segoe UI';
+	border-radius: 20px;
+}
+.aboutTitle {
+	display: flex;
+	color:rgb(36, 209, 195);
+	font-weight: bolder;
+	margin: 3%;
+	width: 100%;
+	margin: 2% 13%;
+}
+.aboutText {
+	width: 95%;
+	margin: 30px;
+	font-weight: bolder;
+}
+.project{
+	background-color: #f5f2d2;
+	padding: 10% 0;
+}
+.projectTitle{
+	margin: auto;
+	width: 55%;
+	color:rgb(36, 209, 195);
+	font-weight: bolder;
+	padding: 25px;
+}
+.projectConten{
+	width: 80%;
+	display: flex;
+	margin: auto;
+	font-weight: bolder;
+	margin-bottom: 50px;
+}
+.projectWeb{
+	width: 70%;
+	height: auto;
+}
+.projectPage{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+.projectDescription{
+	padding: 3%;
+	border-radius: 20px;
+	width: 30%;
+	margin: 0 5%;
+	background-color: rgb(255, 238, 3);
+}
+.equalization{
+	color:rgb(56, 56, 56);
+	display: flex;
+	margin: auto;
+	justify-content: center;
+	font-weight: bolder;
+	margin: 5%;
+}
+.projectStack{
+	margin: auto 3%;
+}
+.reference{
+	display: flex;
+	text-align: start;
+	text-decoration: none;
+	font-weight: bolder;
+	color:rgb(56, 56, 56);
+	margin: auto;
+	align-items: center;
+}
+.referenceStack{
+	width: 30px;
+	padding: 10%;
+}
+.flex{
+	display: flex;
+}
+.logo{
+	height: auto;
+	width: auto;
+	padding: 1%;
+	border-radius: 20px;
+	background-color: rgb(255, 255, 255);
+	
+}
+.logoText{
+	margin: auto;
+	width: 60%;
+	text-align: center;
+	font-weight: bolder;
+}
+.contact{
+	padding: 3%;
+}
+.contactItem{
+	display: flex;
+	justify-content: end;
+	width: 20%;
+	margin: 5px 70%;
+}
+.contactName{
+	font-weight: bold;
+	color: rgb(255, 238, 3);
+	width: 8%;
+}
+.contactData{
+	width: 8%;
+	margin: 5px 40px;
+	color: rgba(255, 255, 255, 0.76);
+	margin: 0 50%;
+}
+
+@media(max-width:1400px){
+	#hederItem{
+		font-size: 10px;
+	}
+	.title{
+		font-size: 40px;
+	}
+	.text{
+		font-size: 25px;
+	}
+	.projectText{
+		font-size: 20px;
+	}
+	.stacks{
+		font-size: 25px;
+		width: 70%;
+	}
+	.homeContent{
+		width: 70%;
+	}
+	.contactItem{
+		margin: 5px 60%;
+	}
+	.referenceStack{
+		width: 25px;
+	}
+}
+@media(max-width:1050px){
+	#hederItem{
+		font-size: 15px;
+	}
+	.title{
+		font-size: 35px;
+	}
+	.text{
+		font-size: 20px;
+	}
+	.projectText{
+		font-size: 15px;
+	}
+	.stacks{
+		font-size: 20px;
+		width: 80%;
+	}
+	.homeContent{
+		width: 80%;
+	}
+	.referenceStack{
+		width: 20px;
+	}
+}
+@media(max-width:880px){
+	#hederItem{
+		width: 80%;
+		font-size: 12px;
+	}
+	#link{
+		display: flex;
+		width: auto;
+		flex-wrap: nowrap;
+	}
+	.title{
+		font-size: 25px;
+	}
+	.text{
+		font-size: 15px;
+	}
+	.projectText{
+		font-size: 10px;
+	}
+	.stacks{
+		font-size: 15px;
+	}
+	.referenceStack{
+		width: 20px;
+	}
+}
+@media(max-width:480px){
+	#hederItem{
+		width: 90%;
+		font-size: 8px;
+	}
+	.title{
+		font-size: 20px;
+	}
+	.text{
+		font-size: 10px;
+	}
+	.projectText{
+		font-size: 5px;
+	}
+	.referenceStack{
+		width: 15px;
+	}
+}
+@media(max-width:320px){
+	#hederItem{
+		width: 95%;
+		font-size: 6px;
+	}
+	.referenceStack{
+		width: 10px;
+	}
+}
