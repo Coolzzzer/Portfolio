@@ -48,8 +48,8 @@ body{
 .menuItem{
 	display: flex;
 	border-radius: 40px;
-	width: 4%;
-	height: 9%;
+	width: 40px;
+	height: 2px;
 	background-color: rgb(119, 38, 0);
 	position: relative;
 }
@@ -57,20 +57,18 @@ body{
 	content: "";
 	border-radius: 40px;	
 	background-color: rgb(119, 38, 0);
-	width: 100%;
+	width: 98%;
 	height: 100%;
 	position: absolute;
 	padding: 1%;
 }
 .menuItem::after{
-	top: 8px;
+	margin-top: -8px;
 	padding: 1%;
-	margin: 4% 0;
 }
 .menuItem::before{
-	top: -8px;
+	margin-top: 8px;
 	padding: 1%;
-	margin: -4% 0;
 }
 .right{
 	width: 50%;
@@ -89,7 +87,7 @@ body{
 }
 .home{
 	margin: auto;	
-	padding: 20% 0;
+	padding: 10% 0;
 }
 .homeContent{
 	color:rgb(255, 238, 3);
@@ -156,7 +154,7 @@ body{
 	width: 70%;
 	margin: auto;
 	padding-bottom: 20%;
-	padding: 2%;
+	padding: 10% 0;
 }
 .aboutContent {
 	background-color: rgb(255, 238, 3);
@@ -338,6 +336,15 @@ body{
 	.referenceStack{
 		width: 20px;
 	}
+	.menuItem{
+		width: 30px;
+	}
+	.menuItem::after{
+		margin-top: -8px;
+	}
+	.menuItem::before{
+		margin-top:8px;
+	}
 }
 @media(max-width:880px){
 	#hederItem{
@@ -371,6 +378,15 @@ body{
 	.referenceStack{
 		width: 20px;
 	}
+	.menuItem{
+		width: 30px;
+	}
+	.menuItem::after{
+		margin-top: -6px;
+	}
+	.menuItem::before{
+		margin-top: 6px;
+	}
 }
 @media(max-width:480px){
 	.title{
@@ -388,6 +404,15 @@ body{
 	.referenceStack{
 		width: 15px;
 	}
+	.menuItem{
+		width: 20px;
+	}
+	.menuItem::after{
+		margin-top: -4px;
+	}
+	.menuItem::before{
+		margin-top: 4px;
+	}
 }
 @media(max-width:320px){
 	#hederItem, #hederItemOff, #hederItemOn{
@@ -402,4 +427,5 @@ body{
 	.text{
 		font-size: 5px;
 	}
+
 }
