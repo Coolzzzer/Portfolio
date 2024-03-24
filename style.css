@@ -130,12 +130,24 @@ body{
 }
 .stacks{
 	color:rgb(255, 238, 3);
-	margin: 4% auto;
+	margin: 5% auto;
 	display: flex;
 	align-items: center;
 	font-weight: bolder;
-	width: 60%;
 }
+.sliderStacks {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.images {
+  display: flex;
+	width: 100%;
+  height: auto;
+	scroll-behavior: smooth;
+}
+
 .line{
 	display: flex;
 	margin: 0 3%;
@@ -144,7 +156,7 @@ body{
 	background-color: rgb(255, 238, 3);
 }
 .stack{
-	width: 5%;
+	width: 15%;
 	margin: 0 3%;
 }
 .about {
@@ -153,8 +165,7 @@ body{
 	justify-content: center;
 	width: 70%;
 	margin: auto;
-	padding-bottom: 20%;
-	padding: 10% 0;
+	padding-bottom: 10%;
 }
 .aboutContent {
 	background-color: rgb(255, 238, 3);
@@ -208,6 +219,49 @@ body{
 	margin-left: 50%;
 	transform: translateX(-50%);
 }
+
+.cont {
+	position: relative;
+	width: 70%;
+	height: auto;
+	overflow: hidden;
+}
+.image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60%;
+	transition: transform 0.5s ease;
+}
+.projectBtn{
+	right: 43%;
+	justify-content: center;
+	position: absolute;
+	margin-top: 0;
+	width: 50px;
+	height: 30px;
+	border-radius: 4px;
+	cursor: pointer;
+	border: none;
+	background-color: rgb(255, 146, 3);
+}
+
+.projectBtn:hover{
+	background-color: rgb(235, 115, 3);
+}
+.projectBtnImg{
+	width: 80%;
+	height: 80%;
+}
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
 .projectDescription{
 	padding: 3%;
 	border-radius: 20px;
@@ -226,6 +280,7 @@ body{
 .projectStack{
 	margin: auto 3%;
 }
+
 .reference{
 	display: flex;
 	text-align: start;
@@ -256,25 +311,44 @@ body{
 	text-align: center;
 	font-weight: bolder;
 }
-.contact{
-	padding: 3%;
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 238, 3);
+	color:rgb(119, 38, 0);
+  padding: 0;
 }
-.contactItem{
+.list{
+	width: 100%;
 	display: flex;
-	justify-content: end;
-	width: 20%;
-	margin: 5px 70%;
+	padding: 0;
+	margin-left: 70%;
 }
-.contactName{
-	font-weight: bold;
-	color: rgb(255, 238, 3);
-	width: 8%;
+.contact{
+	list-style-type: none;
+	text-align: start;
+	padding: 1%;
 }
-.contactData{
-	width: 8%;
-	margin: 5px 40px;
-	color: rgba(255, 255, 255, 0.76);
-	margin: 0 50%;
+li{
+	font-size: 15px;
+	font-weight:700;
+	width: 100%;
+}
+.contactBtn{
+	width: 25px;
+	height: 25px;
+	border-radius: 3px;
+	background-color: rgb(255, 146, 3);
+}
+.contactBtn:hover{
+	background-color: rgb(235, 115, 3);
+}
+.contactImg{
+	padding: 20%;
+	width: 60%;
+	height: 60%;
 }
 
 @media(max-width:1400px){
@@ -292,7 +366,7 @@ body{
 	}
 	.stacks{
 		font-size: 25px;
-		width: 70%;
+		width: 50%;
 	}
 	.homeContent{
 		width: 70%;
@@ -310,6 +384,17 @@ body{
 	}
 	#hederItem{
 		width: 20%;
+	}
+	.projectBtn{
+		width: 40px;
+		height: 25px;
+	}
+	li{
+		font-size: 12px;
+	}
+	.contactBtn{
+		width: 20px;
+		height: 20px;
 	}
 	.title{
 		font-size: 35px;
@@ -360,6 +445,20 @@ body{
 		width: auto;
 		flex-wrap: nowrap;
 	}
+	.projectBtn{
+		width: 30px;
+		height: 20px;
+	}
+	.list{
+		margin-left: 60%;
+	}
+	li{
+		font-size: 10px;
+	}
+	.contactBtn{
+		width: 15px;
+		height: 15px;
+	}
 	.title{
 		font-size: 25px;
 	}
@@ -389,6 +488,32 @@ body{
 	}
 }
 @media(max-width:480px){
+	.projectBtn{
+		width: 20px;
+		height: 10px;
+	}
+	.projectBtnImg{
+		display: flex;
+		margin-bottom: 90px;
+		width: 100%;
+		height: 100%;
+	}
+	.list{
+		margin-left: 50%;
+	}
+	li{
+		font-size: 8px;
+	}
+	.contact{
+		padding: 0.5%;
+	}
+	.contactBtn{
+		width: 10px;
+		height: 10px;
+	}
+	.contactImg{
+		margin-bottom: 90px;
+	}
 	.title{
 		font-size: 20px;
 	}
@@ -427,5 +552,11 @@ body{
 	.text{
 		font-size: 5px;
 	}
-
+	li{
+		font-size: 5px;
+	}
+	.contactBtn{
+		width: 8px;
+		height: 8px;
+	}
 }
